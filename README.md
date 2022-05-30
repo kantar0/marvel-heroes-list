@@ -1,8 +1,7 @@
 
 # Lista de personajes de Marvel App
 <p align="center">
- ![image](https://kantar0.dev/media/app.gif)
-  <img src="https://kantar0.dev/media/app.gif">
+![](https://kantar0.dev/media/app.gif)
 </p>
 _App web que interactúa con la API de Marvel para mostrar información de sus personajes (Héroes y villanos)_
 
