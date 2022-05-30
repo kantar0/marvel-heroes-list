@@ -13,12 +13,12 @@ _Cualquier entorno donde corra NodeJS y tenga instalado las dependencias necesar
 
 ### Comandos 🔧
 
-1. #### `npm run build`
-    
-2. #### `npm start`
-
+1. #### `npm start`
+   Para iniciar el proyecto. 
+3. #### `npm run build`
+   Para desplegar en entorno de producción
 3. #### `npm run server`
-
+   Para correr un servidor API REST local que simula las peticiones del login. 
 
 ## Construido con 🛠️
 
