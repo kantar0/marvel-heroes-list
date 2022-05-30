@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$S73BLnNG6/FGxwFq8EzJku4JLyUNbhBNu1J66p.Jaq9PWdjOFlcN6",
+      "id": 1
+    },
+    {
+      "email": "pedro@kantar0.dev",
+      "password": "$2a$10$QxO.c.z2n.ut.RxjaNDRA.ChbhrpLjb7Ly/BDokt2Wrw0bIK6NMDO",
+      "firstname": "Pedro",
+      "lastname": "Rojas",
+      "id": 3
+    }
+  ]
+}
