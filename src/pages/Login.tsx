@@ -86,6 +86,17 @@ const Login = () => {
       <div className="flex justify-center mt-8 fm:mt-10 justify-items-center content-center justify-self-center place-content-center">
         <div className="rounded-xl bg-gradient-to-r bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 p-2 sm:p-6 sm:w-1/2 fm:w-full dark:bg-gray-800">
           <form onSubmit={handleSubmit(onSubmit)}>
+          {Error.error.status === 400 && (
+                <div
+                  className="p-4 mb-4 mt-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
+                  role="alert"
+                >
+                  <span className="font-medium">
+                    Error {Error.error.status} {Error.error.message}!
+                  </span>{" "}
+                  Email or Password not found.
+                </div>
+              )}
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -107,17 +118,6 @@ const Login = () => {
                 >
                   <span className="font-medium">Error!</span> You must enter
                   your email.
-                </div>
-              )}
-              {Error.error.status === 400 && (
-                <div
-                  className="p-4 mb-4 mt-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
-                  role="alert"
-                >
-                  <span className="font-medium">
-                    Error {Error.error.status} {Error.error.message}!
-                  </span>{" "}
-                  Email not found.
                 </div>
               )}
             </div>
