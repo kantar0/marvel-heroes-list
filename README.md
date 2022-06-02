@@ -6,7 +6,7 @@
 
 _App web que interactúa con la API de Marvel para mostrar información de sus personajes (Héroes y villanos)_
 
-DEMO: [https://marvel-heroes-list-nu.vercel.app/](https://marvel-heroes-list-nu.vercel.app/)
+LIVE: [https://marvel-heroes-list-nu.vercel.app/](https://marvel-heroes-list-nu.vercel.app/)
 
 ---
 
