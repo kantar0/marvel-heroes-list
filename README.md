@@ -27,7 +27,7 @@ REACT_APP_PUBLIC_KEY=yourPublicKey
 REACT_APP_PRIVATE_KEY=YourPrivateKey
 REACT_APP_BASE_URL='https://gateway.marvel.com'
 ```
-Para obtener las Keys y obtener más información:[developer.marvel.com](https://developer.marvel.com/)
+Para obtener las Keys y obtener más información: [developer.marvel.com](https://developer.marvel.com/)
 
 ## Construido con 🛠️
 
