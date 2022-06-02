@@ -1,6 +1,6 @@
 import React from "react";
 import { Character } from "../types";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 interface Props {
     character: Character
     index : React.Key | null | undefined
