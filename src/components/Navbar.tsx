@@ -1,23 +1,14 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const navigate = useNavigate();
-  const userString = localStorage.getItem('user');
-  const localUser = userString ? JSON.parse(userString) : null;
-
-  const logout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    navigate('/login', { replace: true });
-  }
 
   return (
     <nav className=" rounded-md relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-800 mb-3">
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <span className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
-            Bienvenido {localUser?.firstname} {localUser?.lastname}
+            Bienvenido 
           </span>
           <button
             className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -57,11 +48,11 @@ const Navbar = () => {
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="nav-item">
-              <div onClick={logout}
+              <div
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 cursor-pointer"
               >
                 <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Logout</span>
+                <span className="ml-2"></span>
                 </div>
             </li>
           </ul>
