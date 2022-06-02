@@ -80,7 +80,7 @@ const Login = () => {
     <div className="container">
       <div className="flex justify-center mt-20 fm:mt-10 justify-items-center content-center justify-self-center place-content-center">
         <div id="title">
-        <h1 className="text-4xl font-bold">Lista de personajes de marvel</h1>
+        <h1 className="text-4xl font-bold">Lista de personajes de Marvel</h1>
         </div>
       </div>
       <div className="flex justify-center mt-8 fm:mt-10 justify-items-center content-center justify-self-center place-content-center">
