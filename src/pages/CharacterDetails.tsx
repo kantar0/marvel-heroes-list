@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { GetCharacter } from "../services/GetCharacter";
 import { Character as ICharacter } from "../types";
 import Breadcrumb from "../components/Breadcrumb";
 import { useParams } from "react-router";
 import ComicsList from "../components/ComicsList";
-import { useNavigate } from "react-router-dom";
 
 type characterDetailsPageRouteParams = {
   id: string
 };
 const CharacterDetails = () => {
-  const navigate = useNavigate();
-  const Token = localStorage.getItem('token');
 
   const [Character, setCharacter] = useState<ICharacter>();
   const { id } = useParams<characterDetailsPageRouteParams>() as { id: string };
@@ -26,9 +23,6 @@ const CharacterDetails = () => {
 
   useEffect(() => {
     loadCharacter();
-    if (!Token) {
-      navigate('/login', { replace: true });
-    }
   }, []);
 
   return (
