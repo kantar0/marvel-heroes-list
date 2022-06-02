@@ -3,13 +3,14 @@
 <p align="center">
   <img src="https://media.giphy.com/media/pfb05BnbOgA1M6E1YE/giphy.gif">
 </p>
+
 _App web que interactúa con la API de Marvel para mostrar información de sus personajes (Héroes y villanos)_
 
 ---
 
 ### Pre-requisitos 📋
 
-_Cualquier entorno donde corra NodeJS y tenga instalado las dependencias necesarias,
+_Cualquier entorno donde corra NodeJS y tenga instalado las dependencias necesarias._
 
 ### Comandos 🔧
 
@@ -19,6 +20,14 @@ _Cualquier entorno donde corra NodeJS y tenga instalado las dependencias necesar
    Para desplegar en entorno de producción
 3. #### `npm run server`
    Para correr un servidor API REST local que simula las peticiones del login. 
+
+_Sus variables de entornos:_
+```
+REACT_APP_PUBLIC_KEY=yourPublicKey
+REACT_APP_PRIVATE_KEY=YourPrivateKey
+REACT_APP_BASE_URL='https://gateway.marvel.com'
+```
+Para obtener las Keys y obtener más información:[developer.marvel.com](https://developer.marvel.com/)
 
 ## Construido con 🛠️
 
